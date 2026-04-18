@@ -5,10 +5,10 @@ export const translations = {
       cta: 'Join the Waitlist',
     },
     hero: {
-      eyebrow: 'Maternal Care Platform',
+      eyebrow: 'AI-Powered Maternal Care',
       headline: 'Every maternal health product stops at delivery. Ivara starts there.',
       subhead:
-        'The moment your baby is born, the entire healthcare system shifts focus to the newborn. You get a 15-minute clearance at six weeks, and then nothing. Ivara gives you the longitudinal care relationship the system only gives to the baby.',
+        'The moment your baby is born, the healthcare system shifts focus to the newborn. You get a 15-minute clearance at six weeks, and then nothing. Ivara AI monitors you continuously, adapts your recovery plan week by week, and flags concerns before they become problems. Until you are back to the health you had before pregnancy.',
       ctaPrimary: 'Join the Waitlist',
       ctaSecondary: 'Learn how it works',
       trustBadge:
@@ -23,13 +23,13 @@ export const translations = {
         'She is back at her desk at 90 days postpartum. She is managing a newborn, a career, a household, and a body that has not recovered. The healthcare system has nothing left to offer her. Ivara does.',
     },
     solution: {
-      title: 'The care relationship your baby gets from a pediatrician, built for you.',
-      step1Title: 'Daily Check-in',
-      step1Desc: 'Wearable sync and guided daily logs track your recovery from the day you come home.',
-      step2Title: 'Your Care Navigator',
-      step2Desc: 'A trained human reviews your data, flags concerns early, and connects you to the right specialist.',
-      step3Title: 'Specialist Access',
-      step3Desc: 'Pelvic floor physio, perinatal therapy, lactation, dietitian, and endocrinology. On demand.',
+      title: 'Continuous AI care, not episodic appointments.',
+      step1Title: 'AI Monitors You Daily',
+      step1Desc: 'Wearable data and guided check-ins feed Ivara AI from the day you come home. It builds your personal recovery baseline and watches for deviations, 24 hours a day.',
+      step2Title: 'Your Plan Adapts Weekly',
+      step2Desc: 'Your recovery plan is not static. As you move through postpartum stages, Ivara AI updates your recommendations. What matters at week 6 is different from week 16.',
+      step3Title: 'Flags → Navigator → Specialists',
+      step3Desc: 'When AI detects a concern, your Care Navigator reviews and acts. If you need a specialist (pelvic physio, perinatal therapy, endocrinology), they are a message away.',
     },
     features: {
       title: 'Everything the system never gave you',
@@ -56,8 +56,13 @@ export const translations = {
         },
         {
           icon: '⌚',
-          title: 'Wearable Monitoring',
-          desc: 'Your Fitbit or Apple Watch already tracks sleep and HRV. Ivara reads it and tells you what it means.',
+          title: 'AI Recovery Monitoring',
+          desc: 'Your Fitbit or Apple Watch tracks sleep and HRV. Ivara AI reads it in the context of your recovery stage and tells you what it means right now.',
+        },
+        {
+          icon: '📈',
+          title: 'Adaptive Recovery Plans',
+          desc: 'Your care plan updates as you heal. Recommendations at week 6 are different from week 16. Ivara AI adjusts your program to where you actually are.',
         },
         {
           icon: '👩‍⚕️',
@@ -65,6 +70,34 @@ export const translations = {
           desc: 'A trained human who reviews your data, answers your questions, and escalates when something matters.',
         },
       ],
+    },
+    timeline: {
+      title: 'Your recovery has stages. Your plan should too.',
+      subtitle: 'Ivara AI adapts your care plan as you move through each phase of postpartum recovery. No static programs. No one-size-fits-all.',
+      stages: [
+        {
+          period: 'Week 1–2',
+          label: 'Stabilization',
+          focus: 'Ivara AI establishes your baseline: vitals, sleep, feeding patterns. Your plan focuses on rest, wound recovery, and early nutrition.',
+        },
+        {
+          period: 'Week 3–6',
+          label: 'Early Recovery',
+          focus: 'AI tracks HRV, mood, and sleep quality daily. Your plan introduces gentle movement and nutritional replenishment. The 6-week assessment happens here.',
+        },
+        {
+          period: 'Week 6–12',
+          label: 'Active Rehabilitation',
+          focus: 'Pelvic floor rehab begins. Return-to-exercise protocols unlock based on your data, not a generic calendar. Hormonal patterns monitored closely.',
+        },
+        {
+          period: 'Month 4–12',
+          label: 'Return to Self',
+          focus: 'Career re-entry support, hormonal normalization, strength recovery. Your plan pushes toward the health you had before pregnancy.',
+        },
+      ],
+      goalLabel: 'The goal',
+      goalText: 'Return you to the health you had before pregnancy. Not just functional, but fully recovered.',
     },
     trust: {
       title: "Built with India's leading OBs and maternal health specialists",
