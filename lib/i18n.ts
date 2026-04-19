@@ -8,7 +8,7 @@ export const translations = {
       eyebrow: 'AI-Powered Maternal Care',
       headline: 'Every maternal health product stops at delivery. Ivara starts there.',
       subhead:
-        'The moment your baby is born, the healthcare system shifts focus to the newborn. You get a 15-minute clearance at six weeks, and then nothing. Ivara AI monitors your physical recovery and emotional wellness continuously, adapts your care plan week by week, and flags concerns before they become problems. Until you are back to who you were before pregnancy.',
+        'You have a newborn who needs you at your best. The healthcare system gives you a 15-minute clearance at six weeks and leaves the rest to chance. Ivara AI monitors your physical recovery and emotional wellness continuously, adapts your care plan week by week, and flags concerns before they become problems. Because the best thing for your child is a mother who is fully well.',
       ctaPrimary: 'Join the Waitlist',
       ctaSecondary: 'Learn how it works',
       trustBadge:
@@ -16,14 +16,14 @@ export const translations = {
     },
     problem: {
       title: 'The system moved on. You did not.',
-      stat1: 'Your baby gets monthly pediatric visits from day one. You get a 15-minute clearance at 6 weeks, and then nothing.',
+      stat1: 'Your baby has a pediatrician tracking every milestone from day one. Your postpartum recovery gets a 15-minute clearance at 6 weeks. Both of you deserve continuous care.',
       stat2: '1 in 5 mothers experience postpartum conditions that go undetected and untreated for months to years.',
       stat3: 'The average mother returns to work at 3 months with zero medical support and no recovery plan.',
       narrative:
-        'She is back at her desk at 90 days postpartum. She is managing a newborn, a career, a household, and a body that has not recovered. The healthcare system has nothing left to offer her. Ivara does.',
+        'She is back at her desk at 90 days postpartum. She is showing up for her newborn, her career, her household, and a body that has not finished recovering. She wants to be present for all of it. The healthcare system has nothing left to offer her. Ivara does.',
     },
     solution: {
-      title: 'Continuous AI care, not episodic appointments.',
+      title: 'You are also a patient. Ivara treats you like one.',
       step1Title: 'AI Monitors You Daily',
       step1Desc: 'Wearable data, daily mood check-ins, and guided logs feed Ivara AI from the day you come home. It builds your physical and emotional baseline and watches for deviations, 24 hours a day.',
       step2Title: 'Your Plan Adapts Weekly',
@@ -214,7 +214,7 @@ export const translations = {
       error: 'Something went wrong. Please try again.',
     },
     footer: {
-      tagline: 'Every maternal health product stops at delivery. Ivara starts there.',
+      tagline: 'Your baby has a doctor tracking every milestone. Now you do too.',
       privacy: 'Privacy Policy',
       terms: 'Terms of Service',
       contact: 'Contact',
