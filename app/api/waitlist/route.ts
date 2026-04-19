@@ -3,14 +3,14 @@ import { waitlistSchema } from '@/lib/validations'
 import { appendToWaitlist, isEmailRegistered } from '@/lib/storage'
 import { sendWaitlistConfirmation } from '@/lib/email'
 
-// In-memory rate limiter — resets on serverless cold starts.
+// In-memory rate limiter - resets on serverless cold starts.
 // Replace with Upstash Redis in production.
 const rateLimitMap = new Map<string, { count: number; resetAt: number }>()
 const RATE_LIMIT = 5
 const RATE_WINDOW_MS = 60 * 60 * 1000 // 1 hour
 
 function getClientIP(req: NextRequest): string {
-  // x-forwarded-for is spoofable by clients — noted for production hardening
+  // x-forwarded-for is spoofable by clients - noted for production hardening
   const forwarded = req.headers.get('x-forwarded-for')
   return forwarded ? forwarded.split(',')[0].trim() : 'unknown'
 }

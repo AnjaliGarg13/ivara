@@ -6,13 +6,13 @@ export const translations = {
     },
     hero: {
       eyebrow: 'AI-Powered Maternal Care',
-      headline: 'Every maternal health product stops at delivery. Ivara starts there.',
+      headline: 'The system stopped at six weeks. We don\'t.',
       subhead:
-        'You have a newborn who needs you at your best. The healthcare system gives you a 15-minute clearance at six weeks and leaves the rest to chance. Ivara AI monitors your physical recovery and emotional wellness continuously, adapts your care plan week by week, and flags concerns before they become problems. Because the best thing for your child is a mother who is fully well.',
-      ctaPrimary: 'Join the Waitlist',
-      ctaSecondary: 'Learn how it works',
+        'Continuous AI monitoring, adaptive care plans, and early alerts. For every week of your recovery.',
+      ctaPrimary: 'Get Early Access',
+      ctaSecondary: 'See how it works',
       trustBadge:
-        'Built with OBs and specialists from Apollo and Manipal. DPDP Act 2023 compliant.',
+        'Building with OBs and maternal health specialists. DPDP Act 2023 compliant.',
     },
     problem: {
       title: 'The system moved on. You did not.',
@@ -100,32 +100,65 @@ export const translations = {
       goalText: 'Return you to the physical and emotional health you had before pregnancy. Not just functional, but fully recovered.',
     },
     trust: {
-      title: "Built with India's leading OBs and maternal health specialists",
-      advisoryTitle: 'Medical Advisory Board',
+      title: "Building with India's leading OBs and maternal health specialists",
+      pillars: [
+        {
+          icon: '🩺',
+          title: 'Clinically Grounded',
+          desc: 'Assessment protocols and care pathways co-designed with OB-GYNs, pelvic physios, and perinatal therapists.',
+        },
+        {
+          icon: '🔒',
+          title: 'Private by Design',
+          desc: 'Your health data is yours. Never shared without explicit consent. DPDP Act 2023 compliant end-to-end.',
+        },
+        {
+          icon: '🤝',
+          title: 'ASHA-Integrated',
+          desc: "Built to work directly with India's 1 million ASHA workers, so community care reaches every mother.",
+        },
+      ],
+    },
+    leadMagnet: {
+      eyebrow: 'Free Self-Assessment',
+      title: 'Find out where you actually are in your recovery.',
+      subtitle:
+        'Most mothers assume exhaustion, pain, and brain fog are just part of new motherhood. Sometimes they are. Sometimes they are not. The Postpartum Recovery Score takes 5 minutes and tells you the difference.',
+      scoreLine: 'Score 12–48 · Personalized analysis · No spam, ever.',
+      cta: 'Get My Recovery Score (Free)',
+      disclaimer: 'Questions developed with postpartum OBs and specialists.',
+      questions: [
+        'How is your energy compared to your pre-pregnancy baseline?',
+        'Are you experiencing pelvic pain, pressure, or leaking?',
+        'How is your sleep, accounting for your baby\'s schedule?',
+        'Have you felt overwhelmed, detached, or unlike yourself?',
+        'Have you received any care beyond your 6-week checkup?',
+      ],
     },
     testimonials: {
-      title: 'From the women who built careers and then had babies.',
+      title: 'What mothers are saying.',
+      subtitle: 'From postpartum communities across the internet. Shared anonymously.',
       cards: [
         {
           quote:
-            'I went back to work at 12 weeks with undiagnosed diastasis recti and postpartum thyroiditis. I thought I was just tired. I was not just tired.',
-          name: 'Neha R.',
-          city: 'Bangalore',
-          role: 'Senior Product Manager',
+            'My 6-week appointment was 8 minutes. She asked if I was sad, I said no, she said cleared. I had a prolapse I wouldn\'t find out about for four more months.',
+          name: 'Anonymous',
+          city: '',
+          role: 'r/beyondthebump',
         },
         {
           quote:
-            'My OB had 8 minutes with me at the 6-week visit. She asked if I was sad. I said no. That was the entire mental health screening.',
-          name: 'Aisha K.',
-          city: 'Mumbai',
-          role: 'Investment Banker',
+            'It took 7 months to get diagnosed with postpartum thyroiditis. Every symptom: the exhaustion, the brain fog, the hair loss. My OB called it normal new mom stuff.',
+          name: 'Anonymous',
+          city: '',
+          role: 'r/postpartum',
         },
         {
           quote:
-            'There is no word for what the first year after delivery costs a woman professionally and physically. Ivara is the first product that treats this as the medical reality it is.',
-          name: 'Riya S.',
-          city: 'Delhi',
-          role: 'Founder',
+            'Returning to work at 12 weeks meant pretending to be fine. I was in back-to-back meetings wondering every day if what I was feeling was normal or something I should worry about.',
+          name: 'Anonymous',
+          city: '',
+          role: 'r/workingmoms',
         },
       ],
     },

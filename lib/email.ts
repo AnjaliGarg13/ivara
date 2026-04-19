@@ -3,7 +3,7 @@ import { Resend } from 'resend'
 const FROM_ADDRESS = 'Ivara <hello@ivara.health>'
 
 function getResend(): Resend {
-  // Lazy init — only instantiated at request time, not at build time
+  // Lazy init - only instantiated at request time, not at build time
   return new Resend(process.env.RESEND_API_KEY)
 }
 
@@ -21,7 +21,7 @@ function getEmailContent(language: 'en' | 'hi') {
             <h2 style="color: #1A1A1A; font-size: 22px; margin-top: 0;">Dhanyavaad! Aap waitlist mein hain. 🌸</h2>
             <p style="color: #444; line-height: 1.7;">Jab Ivara aapke sheher mein launch hogi, hum aapko sabse pehle batayenge.</p>
             <p style="color: #444; line-height: 1.7; font-style: italic;">"Jab doctor se milne mein waqt lage, Ivara hoti hai na."</p>
-            <p style="color: #444; line-height: 1.7;">Aapka intezaar khatam hoga — abhi ke liye, Ivara aa rahi hai.</p>
+            <p style="color: #444; line-height: 1.7;">Aapka intezaar khatam hoga. Abhi ke liye, Ivara aa rahi hai.</p>
             <div style="margin: 32px 0; padding: 20px; background: #F5EDE3; border-radius: 8px; border-left: 4px solid #C4714F;">
               <p style="margin: 0; color: #1D4E4A; font-size: 14px;">Aapka data aapka hai. Aapki permission ke bina kabhi share nahi hoga. DPDP Act 2023 compliant.</p>
             </div>
@@ -63,7 +63,7 @@ export async function sendWaitlistConfirmation(email: string, language: 'en' | '
   try {
     await getResend().emails.send({ from: FROM_ADDRESS, to: email, subject, html })
   } catch (err) {
-    // Don't fail the waitlist signup if email fails — log and continue
+    // Don't fail the waitlist signup if email fails - log and continue
     console.error('[Resend] Failed to send confirmation email:', err)
   }
 }

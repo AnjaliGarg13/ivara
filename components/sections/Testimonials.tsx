@@ -27,11 +27,19 @@ export default function Testimonials() {
           initial={{ opacity: 0, y: 24 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-4"
         >
           <h2 className="section-title">{t.testimonials.title}</h2>
           <div className="w-16 h-1 bg-terracotta rounded-full mx-auto mt-4" />
         </motion.div>
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={isInView ? { opacity: 1 } : {}}
+          transition={{ duration: 0.6, delay: 0.15 }}
+          className="text-center text-sm text-text-muted mb-14"
+        >
+          {t.testimonials.subtitle}
+        </motion.p>
 
         {/* Cards */}
         <motion.div
@@ -62,19 +70,16 @@ export default function Testimonials() {
               {/* Divider */}
               <div className="w-10 h-0.5 bg-terracotta/30 rounded-full" />
 
-              {/* Attribution */}
+              {/* Attribution - subreddit style, no names */}
               <div className="flex items-center gap-3">
-                {/* Avatar placeholder */}
-                <div className="w-10 h-10 rounded-full bg-terracotta/15 flex items-center justify-center shrink-0">
-                  <span className="text-terracotta text-sm font-bold">
-                    {card.name[0]}
-                  </span>
+                <div className="w-10 h-10 rounded-full bg-terracotta/10 flex items-center justify-center shrink-0 text-lg">
+                  💬
                 </div>
                 <div>
-                  <p className="font-semibold text-text-primary text-sm leading-none">
-                    {card.name}
+                  <p className="font-semibold text-terracotta text-sm leading-none">
+                    {card.role}
                   </p>
-                  <p className="text-text-muted text-xs mt-0.5">{card.role}, {card.city}</p>
+                  <p className="text-text-muted text-xs mt-0.5">Shared anonymously</p>
                 </div>
               </div>
             </motion.div>

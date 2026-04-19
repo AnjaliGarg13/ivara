@@ -19,7 +19,7 @@ export async function appendToWaitlist(entry: WaitlistEntry): Promise<void> {
     const raw = await fs.readFile(WAITLIST_PATH, 'utf-8')
     entries = JSON.parse(raw)
   } catch {
-    // File doesn't exist yet — start fresh
+    // File doesn't exist yet - start fresh
   }
   entries.push(entry)
   await fs.writeFile(WAITLIST_PATH, JSON.stringify(entries, null, 2), 'utf-8')

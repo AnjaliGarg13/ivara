@@ -67,7 +67,7 @@ export default function FAQ() {
                     <span className="font-semibold text-text-primary text-base leading-snug">
                       {item.q}
                     </span>
-                    {/* Trigger indicator — plus becomes X when open */}
+                    {/* Trigger indicator - plus becomes X when open */}
                     <div className="w-6 h-6 rounded-full border-2 border-terracotta/30 flex items-center justify-center shrink-0 group-data-[state=open]:border-terracotta group-data-[state=open]:bg-terracotta/10 transition-all duration-200">
                       <svg
                         width="12"

@@ -60,7 +60,7 @@ export default function Pricing() {
         {/* 3-tier grid */}
         <div className="mt-14 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
 
-          {/* Assessment — one-time hero product */}
+          {/* Assessment - one-time hero product */}
           <motion.div
             initial={{ opacity: 0, y: 32 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -130,7 +130,7 @@ export default function Pricing() {
             </button>
           </motion.div>
 
-          {/* Full Care — inverted terracotta */}
+          {/* Full Care - inverted terracotta */}
           <motion.div
             initial={{ opacity: 0, y: 32 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}

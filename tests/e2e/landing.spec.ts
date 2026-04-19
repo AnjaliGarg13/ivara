@@ -142,7 +142,7 @@ test.describe('Feature Cards', () => {
     await expect(bpCard).toBeVisible()
     await expect(moodCard).toBeVisible()
 
-    // Compare computed styles — must be identical for mental health parity
+    // Compare computed styles - must be identical for mental health parity
     const bpStyles = await bpCard.evaluate((el) => {
       const cs = window.getComputedStyle(el)
       return { bg: cs.backgroundColor, radius: cs.borderRadius, padding: cs.padding }

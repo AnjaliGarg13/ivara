@@ -1,6 +1,7 @@
 import Nav from '@/components/sections/Nav'
 import Hero from '@/components/sections/Hero'
 import Problem from '@/components/sections/Problem'
+import LeadMagnet from '@/components/sections/LeadMagnet'
 import Solution from '@/components/sections/Solution'
 import Timeline from '@/components/sections/Timeline'
 import Features from '@/components/sections/Features'
@@ -17,6 +18,7 @@ export default function HomePage() {
       <Nav />
       <Hero />
       <Problem />
+      <LeadMagnet />
       <Solution />
       <Timeline />
       <Features />
