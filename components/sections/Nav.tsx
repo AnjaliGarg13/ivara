@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import Image from 'next/image'
 import { useLanguage } from '@/context/LanguageContext'
 import { cn } from '@/lib/utils'
 
@@ -38,12 +39,13 @@ export default function Nav() {
             className="flex items-center gap-2 group"
             aria-label="Ivara Home"
           >
-            <div className="w-8 h-8 rounded-full bg-terracotta flex items-center justify-center shadow-ivara group-hover:shadow-ivara-md transition-shadow">
-              <span className="text-white text-sm font-bold">I</span>
-            </div>
-            <span className="text-xl font-bold text-terracotta tracking-tight">
-              {t.nav.logo}
-            </span>
+            <Image
+              src="/ivara-logo.jpeg"
+              alt="Ivara"
+              width={80}
+              height={80}
+              className="h-14 w-auto object-contain"
+            />
           </a>
 
           {/* CTA */}
